@@ -33,6 +33,9 @@ cli.command 'c <...cmd>'
       '/bin/bash'
     ], { stdio: 'inherit' }
 
+cli.command 'install'
+  .action ->
+
 cli.help()
 cli.version (require '../package.json').version
 
