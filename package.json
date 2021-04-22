@@ -1,0 +1,23 @@
+{
+  "name": "abird",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": "https://github.com/Anillc/abird.git",
+  "author": "anillc",
+  "license": "MIT",
+  "private": true,
+  "includeNodeModules": true,
+  "source": "src/index.coffee",
+  "scripts": {
+    "build": "parcel build .",
+    "clean": "shx rm -rf lib"
+  },
+  "devDependencies": {
+    "@parcel/transformer-coffeescript": "2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2",
+    "shx": "^0.3.3"
+  },
+  "dependencies": {
+    "cac": "^6.7.2"
+  }
+}
