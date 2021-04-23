@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+crontab -u root /etc/cron.d/dn42roa
+cron -f
