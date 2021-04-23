@@ -8,7 +8,7 @@ setup = ->
     'run'
     '-d'
     '--name=abird'
-#    '--net=host'
+    '--net=host'
     '--cap-add=NET_ADMIN'
     '--restart=always'
     '-v', '~/.abird/bird:/bird'
