@@ -16,8 +16,7 @@ jobs:
       - name: build
         run: |
           npm i -g yarn
-          yarn ci
-          yarn build && yarn pkg
+          yarn && yarn build && yarn pkg
       - name: upload
         uses: actions/upload-artifact@v2
         with:
