@@ -8,4 +8,4 @@ RUN chmod +x /tmp/s6-overlay-amd64-installer && /tmp/s6-overlay-amd64-installer 
 
 COPY ./root /
 
-ENTRYPOINT ["/entry.sh"]
+ENTRYPOINT ["/init"]
