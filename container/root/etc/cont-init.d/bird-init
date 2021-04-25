@@ -1,9 +1,13 @@
 #!/usr/bin/bash
+mkdir -p /bird
 if [ ! "$(ls -A /bird)" ]; then
   cp /abird.conf /bird/abird.conf
-  mkdir /bird/dn42peers
-  mkdir /bird/internetpeers
-  mkdir /bird/intranetpeers
+  mkdir /bird/dn42
+  mkdir /bird/internet
+  mkdir /bird/internet/peers
+  mkdir /bird/internet/transits
+  mkdir /bird/internet/customers
+  mkdir /bird/intranet
   exit 0
 fi
 curl -sfSLR {-o,-z}/etc/bird/roa_dn42_v6.conf https://dn42.burble.com/roa/dn42_roa_bird2_6.conf
