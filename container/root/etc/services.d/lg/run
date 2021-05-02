@@ -1,2 +1,2 @@
 #!/bin/sh
-bird -f
+proxy

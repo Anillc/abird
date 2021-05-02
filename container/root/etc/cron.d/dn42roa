@@ -1,1 +1,1 @@
-*/15 * * * * /roa.sh
+*/15 * * * * /roa.sh && /usr/sbin/birdc c
