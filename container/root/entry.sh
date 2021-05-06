@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
-mkdir -p /abird
-if [ ! "$(ls -A /abird)" ]; then
-  cp -rf /abird-example/* /abird
+mkdir -p /config
+if [ ! "$(ls -A /config)" ]; then
+  cp -rf /config-example/* /config
   exit 0
 fi
 /roa.sh

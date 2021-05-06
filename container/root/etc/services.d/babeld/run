@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/bin/babeld -c /abird/babeld.conf
+/usr/bin/babeld -c /config/babeld.conf

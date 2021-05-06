@@ -11,7 +11,7 @@ setup = ->
     '--net=host'
     '--cap-add=NET_ADMIN'
     '--restart=always'
-    '-v', '~/.abird/abird:/abird'
+    '-v', '~/.abird/config:/config'
     'anillc/abird'
   ], { stdio: 'inherit', shell: true }
 
