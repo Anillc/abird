@@ -8,8 +8,8 @@ ARG S6=https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.3/
 
 FROM base-$TARGETARCH
 
-ADD $S6 /tmp/
-RUN chmod +x /tmp/s6-overlay-amd64-installer && /tmp/s6-overlay-amd64-installer / && \
+ADD $S6 /tmp/installer
+RUN chmod +x /tmp/installer && /tmp/installer / && \
     apk add --no-cache bird wget iproute2 && \
     apk add --no-cache --virtual .build-deps git go make && \
     go env -w GOPROXY=https://goproxy.cn && \
