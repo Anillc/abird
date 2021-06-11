@@ -20,6 +20,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./container
-          platform: linux/amd64,linux/arm
+          platforms: linux/amd64,linux/arm
           push: true
           tags: anillc/abird:latest
