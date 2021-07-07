@@ -2,8 +2,7 @@
 set -e
 mkdir -p /config
 if [ ! "$(ls -A /config)" ]; then
-  cp -rf /config-example/* /config
+  cp -rf /default-config/* /config
   exit 0
 fi
-/roa.sh
 /init
