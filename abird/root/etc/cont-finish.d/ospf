@@ -1,2 +1,2 @@
 #!/bin/sh
-/config/ospf/shutdown.sh
+sh /config/ospf/shutdown.sh
