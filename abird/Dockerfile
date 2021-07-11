@@ -1,7 +1,7 @@
 FROM alpine:edge
 ADD https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.1/s6-overlay-amd64-installer /tmp/
 RUN chmod +x /tmp/s6-overlay-amd64-installer && /tmp/s6-overlay-amd64-installer / && \
-    apk add --no-cache bird wget iproute2 && \
+    apk add --no-cache bird wget iproute2 iputils grep && \
     apk add --no-cache --virtual .build-deps git go make && \
     go env -w GOPROXY=https://goproxy.cn && \
     git clone https://github.com/xddxdd/bird-lg-go.git && cd bird-lg-go && \
