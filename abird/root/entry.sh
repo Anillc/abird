@@ -5,6 +5,7 @@ if [ ! "$(ls -A /config)" ]; then
   cp -rf /default-config/* /config
   exit 0
 fi
+sleep 3 # sleep for creation of tunnels
 while [ ! -f /etc/bird/ptp.conf ]; do
   /bin/sh /ptp.sh > /etc/bird/ptp.conf
 done
