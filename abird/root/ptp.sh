@@ -3,7 +3,7 @@
 # from https://gist.github.com/moesoha/8a97483fff45003c33ddd2e42a7c4d44
 
 # gathering all interfaces with IPv6 link-local address
-for with_ll in $(cat /proc/net/if_inet6 | grep "^fe80" | tr -s ' ' | cut -d ' ' -f 6 | uniq); do
+for with_ll in $(cat /proc/net/if_inet6 | grep "^fe80" | tr -s ' ' | cut -d ' ' -f 6 | uniq -u); do
 	# POINTOPOINT flag is 1 << 4, filter non-PTP interfaces out
 	if [ $(expr \( $(($(cat /sys/class/net/$with_ll/flags))) / 16 \) % 2) -ne 1 ]; then
 		continue
