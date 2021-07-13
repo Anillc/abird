@@ -1,3 +1,0 @@
-#!/bin/sh
-crontab -u root /etc/cron.d/cron
-crond -f

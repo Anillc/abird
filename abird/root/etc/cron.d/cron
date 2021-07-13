@@ -1,2 +1,0 @@
-*/15 * * * * /usr/sbin/birdc c
-*/15 * * * * /bin/sh /ptp.sh > /etc/bird/ptp.conf

@@ -19,12 +19,6 @@ jobs:
       - name: build and push
         uses: docker/build-push-action@v2
         with:
-          context: ./abird
+          context: ./container
           push: true
           tags: anillc/abird:latest
-      - name: build and push
-        uses: docker/build-push-action@v2
-        with:
-          context: ./abird-dn42-roa
-          push: true
-          tags: anillc/abird-dn42-roa:latest

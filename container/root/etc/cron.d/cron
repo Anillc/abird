@@ -1,0 +1,2 @@
+*/15 * * * * sh /roa.sh && /usr/sbin/birdc c
+*/15 * * * * sh /ptp.sh > /etc/bird/ptp.conf && /usr/sbin/birdc c
