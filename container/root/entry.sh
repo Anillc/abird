@@ -6,5 +6,5 @@ if [ ! "$(ls -A /config)" ]; then
   exit 0
 fi
 sh /roa.sh
-sh /ptp.sh
+sh /ptp.sh > /etc/bird/ptp.conf
 /init
