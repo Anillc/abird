@@ -1,2 +1,2 @@
 #!/bin/sh
-/config/ospf/startup.sh
+sh /config/ospf/startup.sh
