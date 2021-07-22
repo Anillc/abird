@@ -1,0 +1,4 @@
+lib/
+node_modules/
+.parcel-cache/
+abird

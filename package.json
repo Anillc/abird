@@ -1,0 +1,25 @@
+{
+    "name": "abird",
+    "version": "1.0.0",
+    "main": "lib/abird.js",
+    "repository": "https://github.com/Anillc/abird.git",
+    "author": "anillc",
+    "license": "MIT",
+    "private": true,
+    "source": "src/abird.coffee",
+    "scripts": {
+      "build": "parcel build .",
+      "pkg": "pkg lib/abird.js --targets linux",
+      "clean": "shx rm -rf lib abird .parcel-cache"
+    },
+    "devDependencies": {
+      "@parcel/transformer-coffeescript": "2.0.0-beta.2",
+      "parcel": "^2.0.0-beta.2",
+      "pkg": "^5.0.0",
+      "shx": "^0.3.3"
+    },
+    "dependencies": {
+      "cac": "^6.7.2",
+      "shelljs": "^0.8.4"
+    }
+  }
